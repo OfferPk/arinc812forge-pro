@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600" style="background:#0a0f18; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111927" />
+      <stop offset="100%" stop-color="#0b111c" />
+    </linearGradient>
+  </defs>
+
+  <!-- Title & Header -->
+  <rect x="30" y="25" width="940" height="70" rx="8" fill="url(#cardGrad)" stroke="#1e293b" />
+  <rect x="50" y="40" width="130" height="38" rx="6" fill="url(#blueGrad)" />
+  <text x="115" y="64" fill="#ffffff" font-size="16" font-weight="bold" text-anchor="middle">ARINC 812</text>
+  <text x="195" y="55" fill="#f1f5f9" font-size="18" font-weight="bold">ARINC812Forge Pro — Galley Architecture &amp; CAN 2.0B Bus</text>
+  <text x="195" y="75" fill="#94a3b8" font-size="13">Galley Insert Equipment (GAIN) &amp; Galley Network Controller (GNC) Dynamic Power Shedding</text>
+
+  <!-- Left: Galley Inserts (GAINs) -->
+  <rect x="30" y="115" width="280" height="210" rx="8" fill="url(#cardGrad)" stroke="#1e293b" />
+  <rect x="45" y="130" width="250" height="30" rx="4" fill="#1e293b" />
+  <text x="170" y="150" fill="#38bdf8" font-size="14" font-weight="bold" text-anchor="middle">Galley Inserts (GAINs)</text>
+  <text x="45" y="185" fill="#cbd5e1" font-size="12">• Chiller Unit (P1, 1.4 kVA) [Preserved]</text>
+  <text x="45" y="210" fill="#cbd5e1" font-size="12">• Steam Oven 1 (P2, 3.1 kVA) [Heating]</text>
+  <text x="45" y="235" fill="#cbd5e1" font-size="12">• Steam Oven 2 (P3, 3.0 kVA) [Heating]</text>
+  <text x="45" y="260" fill="#cbd5e1" font-size="12">• Espresso Maker (P4, 2.6 kVA) [Brewing]</text>
+  <text x="45" y="285" fill="#cbd5e1" font-size="12">• Water Boiler (P5) / Compactor (P6)</text>
+  <text x="45" y="310" fill="#94a3b8" font-size="11">CAN 2.0B 29-bit Identifiers (125/250 kbps)</text>
+
+  <!-- Middle: GNC Controller & Shedding Engine -->
+  <rect x="360" y="115" width="280" height="210" rx="8" fill="url(#cardGrad)" stroke="#1e293b" />
+  <rect x="375" y="130" width="250" height="30" rx="4" fill="#1e293b" />
+  <text x="500" y="150" fill="#fbbf24" font-size="14" font-weight="bold" text-anchor="middle">Galley Network Controller</text>
+  <text x="375" y="185" fill="#cbd5e1" font-size="12">• Dynamic Load Shedding State Machine</text>
+  <text x="375" y="210" fill="#cbd5e1" font-size="12">• Feeder A Cap: 8.0 kVA (Current: 6.1 kVA)</text>
+  <text x="375" y="235" fill="#cbd5e1" font-size="12">• Feeder B Cap: 6.0 kVA (Current: 4.0 kVA)</text>
+  <text x="375" y="260" fill="#cbd5e1" font-size="12">• Single-Gen De-rate Cap: 8.0 kVA</text>
+  <text x="375" y="285" fill="#cbd5e1" font-size="12">• Deterministic Priority Cutoff</text>
+  <text x="375" y="310" fill="#94a3b8" font-size="11">Standard: ARINC 812 / 812A Section 5</text>
+
+  <!-- Right: Cabin Management System Bridge -->
+  <rect x="690" y="115" width="280" height="210" rx="8" fill="url(#cardGrad)" stroke="#1e293b" />
+  <rect x="705" y="130" width="250" height="30" rx="4" fill="#1e293b" />
+  <text x="830" y="150" fill="#34d399" font-size="14" font-weight="bold" text-anchor="middle">ARINC 429 Bus Telemetry</text>
+  <text x="705" y="185" fill="#cbd5e1" font-size="12">• Label 264 (Feeder A &amp; B Loads)</text>
+  <text x="705" y="210" fill="#cbd5e1" font-size="12">• Label 264 (Shedding Active Flag)</text>
+  <text x="705" y="235" fill="#cbd5e1" font-size="12">• Label 265 (Active GAIN Node Count)</text>
+  <text x="705" y="260" fill="#cbd5e1" font-size="12">• Label 265 (BITE Diagnostics / Faults)</text>
+  <text x="705" y="285" fill="#cbd5e1" font-size="12">• Bit 32 Odd Parity Encoding</text>
+  <text x="705" y="310" fill="#94a3b8" font-size="11">Standard: ARINC 429 Specification Part 1</text>
+
+  <!-- Connecting Bus Arrows -->
+  <line x1="310" y1="220" x2="360" y2="220" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4" />
+  <line x1="640" y1="220" x2="690" y2="220" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4" />
+
+  <!-- Bottom Left: CAN Bus 29-bit Bitfield Breakout -->
+  <rect x="30" y="350" width="455" height="220" rx="8" fill="url(#cardGrad)" stroke="#1e293b" />
+  <text x="50" y="380" fill="#38bdf8" font-size="15" font-weight="bold">ARINC 812 CAN 2.0B 29-Bit Frame Bitfields</text>
+  <text x="50" y="410" fill="#cbd5e1" font-size="12"><tspan font-weight="bold" fill="#38bdf8">Bits 26-28:</tspan> Priority Level (0=High, 7=Low)</text>
+  <text x="50" y="430" fill="#cbd5e1" font-size="12"><tspan font-weight="bold" fill="#38bdf8">Bits 16-23:</tspan> PDU Message Type (0x01-0x07)</text>
+  <text x="50" y="450" fill="#cbd5e1" font-size="12"><tspan font-weight="bold" fill="#38bdf8">Bits 8-15:</tspan> Destination CAN Address (0x01 GNC, 0xFF Broadcast)</text>
+  <text x="50" y="470" fill="#cbd5e1" font-size="12"><tspan font-weight="bold" fill="#38bdf8">Bits 0-7:</tspan> Source Address (0x10-0xFE GAIN Insert Nodes)</text>
+  <rect x="50" y="495" width="415" height="45" rx="6" fill="#060910" stroke="#1e293b" />
+  <text x="65" y="523" fill="#34d399" font-size="12" font-family="monospace">SAMPLE FRAME: ID=0x04050131 (Chiller Telemetry, P=1, Dest=0x01)</text>
+
+  <!-- Bottom Right: Normative Compliance Summary -->
+  <rect x="515" y="350" width="455" height="220" rx="8" fill="url(#cardGrad)" stroke="#1e293b" />
+  <text x="535" y="380" fill="#34d399" font-size="15" font-weight="bold">Normative Regulatory Audit Verification</text>
+  <text x="535" y="410" fill="#cbd5e1" font-size="12">• Automated validation across ARINC 812, DO-160G, and EASA CS-25</text>
+  <text x="535" y="430" fill="#cbd5e1" font-size="12">• Feeder branch current caps &amp; overcurrent protection</text>
+  <text x="535" y="450" fill="#cbd5e1" font-size="12">• Chiller food safety 4°C non-sheddable preservation rule</text>
+  <text x="535" y="470" fill="#cbd5e1" font-size="12">• Cabin electrical fire prevention &amp; thermal runaway cutoff</text>
+  <rect x="535" y="495" width="415" height="45" rx="6" fill="#060910" stroke="#1e293b" />
+  <text x="550" y="523" fill="#38bdf8" font-size="12" font-family="monospace">AUDIT VERDICT: 10/10 CHECKS PASSED (100.0% COMPLIANT) [AIRWORTHY]</text>
+</svg>

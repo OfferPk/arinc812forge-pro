@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" width="1000" height="650" style="background:#0a0f18; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111927" />
+      <stop offset="100%" stop-color="#0e1726" />
+    </linearGradient>
+  </defs>
+
+  <!-- Top App Navigation Bar -->
+  <rect x="20" y="20" width="960" height="60" rx="8" fill="#111927" stroke="#1e293b" />
+  <rect x="35" y="32" width="100" height="36" rx="6" fill="#0284c7" />
+  <text x="85" y="55" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">ARINC 812</text>
+  <text x="150" y="55" fill="#ffffff" font-size="16" font-weight="bold">ARINC812Forge Pro — Galley Insert &amp; GNC Studio</text>
+  
+  <rect x="710" y="32" width="250" height="36" rx="18" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16, 185, 129, 0.4)" />
+  <circle cx="730" cy="50" r="5" fill="#10b981" />
+  <text x="745" y="55" fill="#34d399" font-size="12" font-weight="bold">GNC NORMAL — TOTAL: 10.1 kVA</text>
+
+  <!-- Navigation Tabs -->
+  <rect x="20" y="90" width="960" height="40" rx="6" fill="#0d1522" stroke="#1e293b" />
+  <text x="40" y="115" fill="#38bdf8" font-size="13" font-weight="bold">Galley Insert Rack</text>
+  <text x="180" y="115" fill="#94a3b8" font-size="13">Power Feeders &amp; Shedding</text>
+  <text x="375" y="115" fill="#94a3b8" font-size="13">CAN 2.0B Bus Monitor</text>
+  <text x="545" y="115" fill="#94a3b8" font-size="13">ARINC 429 Telemetry</text>
+  <text x="715" y="115" fill="#94a3b8" font-size="13">Compliance Auditor (10/10)</text>
+
+  <!-- Left Card: Feeder A Load Meter -->
+  <rect x="20" y="145" width="465" height="235" rx="8" fill="url(#cardBg)" stroke="#1e293b" />
+  <text x="40" y="175" fill="#38bdf8" font-size="15" font-weight="bold">Feeder A (115VAC 400Hz 3-Phase)</text>
+  <text x="40" y="205" fill="#94a3b8" font-size="13">Rated Capacity:</text><text x="180" y="205" fill="#ffffff" font-size="13" font-family="monospace">8.00 kVA</text>
+  <text x="40" y="230" fill="#94a3b8" font-size="13">Current Load:</text><text x="180" y="230" fill="#34d399" font-size="13" font-family="monospace">6.10 kVA (76.2%)</text>
+  <rect x="40" y="245" width="420" height="10" rx="5" fill="#1e293b" />
+  <rect x="40" y="245" width="320" height="10" rx="5" fill="#0284c7" />
+  <text x="40" y="280" fill="#94a3b8" font-size="13">Voltage / Freq:</text><text x="180" y="280" fill="#ffffff" font-size="13" font-family="monospace">115.0 VAC / 400.0 Hz (DO-160G OK)</text>
+  <text x="40" y="305" fill="#94a3b8" font-size="13">Connected Inserts:</text><text x="180" y="305" fill="#ffffff" font-size="13">Oven 1 (3.1 kVA), Oven 2 (3.0 kVA)</text>
+  <text x="40" y="330" fill="#94a3b8" font-size="13">Feeder Status:</text><text x="180" y="330" fill="#34d399" font-size="13" font-weight="bold">NORMAL (Within Limits)</text>
+  <text x="40" y="355" fill="#94a3b8" font-size="13">Shedding Interlock:</text><text x="180" y="355" fill="#94a3b8" font-size="13">Water Boiler Standby / Armed</text>
+
+  <!-- Right Card: Feeder B Load Meter -->
+  <rect x="515" y="145" width="465" height="235" rx="8" fill="url(#cardBg)" stroke="#1e293b" />
+  <text x="535" y="175" fill="#38bdf8" font-size="15" font-weight="bold">Feeder B (115VAC 400Hz 3-Phase)</text>
+  <text x="535" y="205" fill="#94a3b8" font-size="13">Rated Capacity:</text><text x="675" y="205" fill="#ffffff" font-size="13" font-family="monospace">6.00 kVA</text>
+  <text x="535" y="230" fill="#94a3b8" font-size="13">Current Load:</text><text x="675" y="230" fill="#34d399" font-size="13" font-family="monospace">4.00 kVA (66.7%)</text>
+  <rect x="535" y="245" width="420" height="10" rx="5" fill="#1e293b" />
+  <rect x="535" y="245" width="280" height="10" rx="5" fill="#10b981" />
+  <text x="535" y="280" fill="#94a3b8" font-size="13">Voltage / Freq:</text><text x="675" y="280" fill="#ffffff" font-size="13" font-family="monospace">115.0 VAC / 400.0 Hz (DO-160G OK)</text>
+  <text x="535" y="305" fill="#94a3b8" font-size="13">Connected Inserts:</text><text x="675" y="305" fill="#ffffff" font-size="13">Chiller (1.4 kVA), Espresso (2.6 kVA)</text>
+  <text x="535" y="330" fill="#94a3b8" font-size="13">Food Safety Chiller:</text><text x="675" y="330" fill="#34d399" font-size="13" font-weight="bold">PRIORITY 1 (3.8°C / PRESERVED)</text>
+  <text x="535" y="355" fill="#94a3b8" font-size="13">Shedding Interlock:</text><text x="675" y="355" fill="#94a3b8" font-size="13">Trash Compactor Idle / Shedded</text>
+
+  <!-- Bottom Card: GAIN Inserts Inventory Table -->
+  <rect x="20" y="400" width="960" height="230" rx="8" fill="url(#cardBg)" stroke="#1e293b" />
+  <text x="40" y="430" fill="#38bdf8" font-size="15" font-weight="bold">Active Galley Insert Equipment (GAINs) — CAN 2.0B Bus Nodes</text>
+
+  <!-- Table Header -->
+  <rect x="40" y="445" width="920" height="30" fill="#1e293b" />
+  <text x="50" y="465" fill="#94a3b8" font-size="11" font-weight="bold">CAN ID</text>
+  <text x="160" y="465" fill="#94a3b8" font-size="11" font-weight="bold">NODE</text>
+  <text x="260" y="465" fill="#94a3b8" font-size="11" font-weight="bold">EQUIPMENT TYPE</text>
+  <text x="420" y="465" fill="#94a3b8" font-size="11" font-weight="bold">FEEDER</text>
+  <text x="520" y="465" fill="#94a3b8" font-size="11" font-weight="bold">LOAD</text>
+  <text x="610" y="465" fill="#94a3b8" font-size="11" font-weight="bold">PRIORITY</text>
+  <text x="710" y="465" fill="#94a3b8" font-size="11" font-weight="bold">TEMPERATURE</text>
+  <text x="840" y="465" fill="#94a3b8" font-size="11" font-weight="bold">POWER STATUS</text>
+
+  <!-- Row 1 -->
+  <rect x="40" y="480" width="920" height="36" fill="rgba(255,255,255,0.02)" />
+  <text x="50" y="503" fill="#38bdf8" font-size="11" font-family="monospace">0x04050131</text>
+  <text x="160" y="503" fill="#cbd5e1" font-size="11">0x31 (CHL)</text>
+  <text x="260" y="503" fill="#ffffff" font-size="11">Galley Air Chiller</text>
+  <text x="420" y="503" fill="#94a3b8" font-size="11">Feeder B</text>
+  <text x="520" y="503" fill="#34d399" font-size="11" font-family="monospace">1.40 kVA</text>
+  <text x="610" y="503" fill="#34d399" font-size="11" font-weight="bold">Priority 1</text>
+  <text x="710" y="503" fill="#34d399" font-size="11">3.8°C (Cold Chain OK)</text>
+  <text x="840" y="503" fill="#34d399" font-size="11" font-weight="bold">GRANTED</text>
+
+  <!-- Row 2 -->
+  <rect x="40" y="520" width="920" height="36" fill="rgba(255,255,255,0.01)" />
+  <text x="50" y="543" fill="#38bdf8" font-size="11" font-family="monospace">0x08050111</text>
+  <text x="160" y="543" fill="#cbd5e1" font-size="11">0x11 (OVN1)</text>
+  <text x="260" y="543" fill="#ffffff" font-size="11">Convection Steam Oven 1</text>
+  <text x="420" y="543" fill="#94a3b8" font-size="11">Feeder A</text>
+  <text x="520" y="543" fill="#34d399" font-size="11" font-family="monospace">3.10 kVA</text>
+  <text x="610" y="543" fill="#38bdf8" font-size="11">Priority 2</text>
+  <text x="710" y="543" fill="#cbd5e1" font-size="11">175.0°C (Heating)</text>
+  <text x="840" y="543" fill="#34d399" font-size="11" font-weight="bold">GRANTED</text>
+
+  <!-- Row 3 -->
+  <rect x="40" y="560" width="920" height="36" fill="rgba(255,255,255,0.02)" />
+  <text x="50" y="583" fill="#38bdf8" font-size="11" font-family="monospace">0x10050121</text>
+  <text x="160" y="583" fill="#cbd5e1" font-size="11">0x21 (BEV)</text>
+  <text x="260" y="583" fill="#ffffff" font-size="11">Espresso Beverage Maker</text>
+  <text x="420" y="583" fill="#94a3b8" font-size="11">Feeder B</text>
+  <text x="520" y="583" fill="#34d399" font-size="11" font-family="monospace">2.60 kVA</text>
+  <text x="610" y="583" fill="#38bdf8" font-size="11">Priority 4</text>
+  <text x="710" y="583" fill="#cbd5e1" font-size="11">92.5°C (Brewing)</text>
+  <text x="840" y="583" fill="#34d399" font-size="11" font-weight="bold">GRANTED</text>
+
+  <!-- Footer Banner -->
+  <rect x="40" y="605" width="920" height="25" fill="#060910" />
+  <text x="50" y="622" fill="#38bdf8" font-size="11" font-family="monospace">ARINC 429 CMS BUS: Label 264=0x300230B4 | Label 265=0x300018B5 | Normative Audit: 10/10 PASS</text>
+</svg>
